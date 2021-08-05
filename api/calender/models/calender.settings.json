@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "calenders",
+  "info": {
+    "name": "calender",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "event": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "datetime",
+      "required": true
+    },
+    "homepage": {
+      "via": "calenders",
+      "model": "homepage"
+    }
+  }
+}

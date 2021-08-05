@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "homepages",
+  "info": {
+    "name": "homepage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "welcomeImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "changeImage1": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "changeImage2": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "weldescription": {
+      "type": "richtext",
+      "required": true
+    },
+    "changedescription": {
+      "type": "richtext",
+      "required": true
+    },
+    "galleries": {
+      "via": "homepage",
+      "collection": "gallery"
+    },
+    "donations": {
+      "via": "homepage",
+      "collection": "donation"
+    },
+    "calenders": {
+      "via": "homepage",
+      "collection": "calender"
+    },
+    "projects": {
+      "collection": "project",
+      "via": "homepage"
+    }
+  }
+}
