@@ -65,6 +65,10 @@
     "projects": {
       "collection": "project",
       "via": "homepage"
+    },
+    "contacts": {
+      "via": "homepage",
+      "collection": "contact"
     }
   }
 }
